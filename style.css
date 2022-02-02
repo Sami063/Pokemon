@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(48, 48, 47)
+}
+img {
+    display: inline-block;
+    margin: 1rem auto;
+    width: 150px;
+    height: 200px;   
+}
+.img-container {
+    background-color: rgb(208, 223, 211);
+    border-radius: 5%
+}
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.pokemon-card {
+    border-radius: 10px;
+    background-color: rgb(221, 211, 211);
+    width: fit;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+
+    box-shadow: 2px 4px 25px rgba(255, 255, 255, 0.1);
+}
+
+.name {
+    background-color: none;
+}
+.title {
+    margin-right: 50px;
+    margin-top: 0;
+    font-size: 23px;
+    color: white;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+
+    padding: 10px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+  }
+  p {
+    padding: 10px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+    background-color: green;
+  }
+
+  .nav {
+    display: block;  
+    margin-top: -100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+  }
+  .nav input[type="text"] {
+      height: 40px;
+      width: 280px;
+      font-size: 18px;
+  }
+  .btn-submit {
+      height: 40px;
+      width: 70px;
+      font-size: 18px;
+  }
+
+
+  /* modal for each pokemon */
+  .modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 700px;
+    width: 500px;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+  }
+
+  
+.hidden {
+    display: none;
+}
+
+.close {
+    position: fixed;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 5;
+  }
